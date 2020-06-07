@@ -8,30 +8,44 @@ class SideMenu extends StatelessWidget {
       padding: EdgeInsets.zero,
       children: <Widget>[
         DrawerHeader(
-          child: Text('Drawer Header'),
+          margin: EdgeInsets.zero,
+          padding: EdgeInsets.zero,
+          child: Text('Statistics App'),
           decoration: BoxDecoration(
             color: Colors.blue,
           ),
         ),
         ListTile(
           title: Text(
-            'Item 1',
+            'Home',
             style: TextStyle(color: Colors.white),
           ),
           onTap: () {
             // Update the state of the app.
             // ...
-            Navigator.pop(context);
+            Navigator.pushReplacementNamed(context, "home");
           },
         ),
         ListTile(
           title: Text(
-            'Item 2',
+            'Marketing',
             style: TextStyle(color: Colors.white),
           ),
           onTap: () {
             // Update the state of the app.
             // ...
+            Navigator.pushReplacementNamed(context, "marketing");
+          },
+        ),
+        ListTile(
+          title: Text(
+            'Operation',
+            style: TextStyle(color: Colors.white),
+          ),
+          onTap: () {
+            // Update the state of the app.
+            // ...
+            Navigator.pushReplacementNamed(context, "operation");
           },
         ),
       ],

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'side_menu.dart';
+import 'package:statisticsapp/side_menu//view/side_menu.dart';
 
-class Statistics extends StatelessWidget {
+class Home extends StatelessWidget {
+  static const String id = 'home';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
