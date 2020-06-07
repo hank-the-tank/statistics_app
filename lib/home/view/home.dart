@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:statisticsapp/side_menu//view/side_menu.dart';
+import 'package:statisticsapp/components/side_menu/view/side_menu.dart';
+import 'package:statisticsapp/components/chart/view/chart.dart';
 
 class Home extends StatelessWidget {
   static const String id = 'home';
@@ -13,24 +14,8 @@ class Home extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Expanded(
-            child: Container(
-              margin: EdgeInsets.all(15.0),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-            ),
-          ),
-          Expanded(
-            child: Container(
-              margin: EdgeInsets.all(15.0),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-            ),
-          ),
+          Chart(),
+          Chart(),
         ],
       ),
     );

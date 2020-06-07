@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:statisticsapp/side_menu/view/side_menu.dart';
+import 'package:statisticsapp/components/side_menu/view/side_menu.dart';
 
 class Operation extends StatelessWidget {
   static const String id = 'operation';
