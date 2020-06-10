@@ -1,6 +1,7 @@
 # statisticsapp
 
-A new Flutter application.
+# Demo
+<img src="lib/assets/demo.gif" width="180">
 
 ## Getting Started
 
