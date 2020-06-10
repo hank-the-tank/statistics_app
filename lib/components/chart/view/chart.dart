@@ -11,14 +11,12 @@ class _ChartState extends State<Chart> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        child: LineChart(showAvg ? avgData() : mainData()),
-        margin: EdgeInsets.all(15.0),
-        decoration: BoxDecoration(
-          color: Colors.black,
-          borderRadius: BorderRadius.circular(10.0),
-        ),
+    return Container(
+      child: LineChart(showAvg ? avgData() : mainData()),
+      margin: EdgeInsets.all(15.0),
+      decoration: BoxDecoration(
+        color: Colors.black,
+        borderRadius: BorderRadius.circular(10.0),
       ),
     );
   }

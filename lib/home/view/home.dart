@@ -14,8 +14,8 @@ class Home extends StatelessWidget {
         title: Text("Statistics"),
       ),
       drawer: SideMenu(),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
         children: <Widget>[
           Row(
             children: [
@@ -39,6 +39,7 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
+          Chart(),
           Chart(),
           Chart(),
         ],
