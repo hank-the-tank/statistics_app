@@ -15,18 +15,16 @@ class SideMenu extends StatelessWidget {
             color: Colors.blue,
           ),
         ),
-        ListTileTheme(
-          child: ListTile(
-            title: Text(
-              'Home',
-              style: TextStyle(color: Colors.black),
-            ),
-            onTap: () {
-              // Update the state of the app.
-              // ...
-              Navigator.pushReplacementNamed(context, "home");
-            },
+        ListTile(
+          title: Text(
+            'Home',
+            style: TextStyle(color: Colors.black),
           ),
+          onTap: () {
+            // Update the state of the app.
+            // ...
+            Navigator.pushReplacementNamed(context, "home");
+          },
         ),
         ListTile(
           title: Text(
