@@ -1,4 +1,3 @@
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:statisticsapp/components/icon_content/view/icon_content.dart';
 import 'package:statisticsapp/components/side_menu/view/side_menu.dart';
