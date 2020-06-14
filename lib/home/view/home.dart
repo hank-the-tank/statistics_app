@@ -1,9 +1,11 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:statisticsapp/components/icon_content/view/icon_content.dart';
 import 'package:statisticsapp/components/side_menu/view/side_menu.dart';
 import 'package:statisticsapp/components/chart/view/chart.dart';
 import 'package:statisticsapp/components/figure/view/figure.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:statisticsapp/components/bar_chart/view/bar_chart.dart';
 
 class Home extends StatelessWidget {
   static const String id = 'home';
@@ -40,8 +42,7 @@ class Home extends StatelessWidget {
             ],
           ),
           Chart(),
-          Chart(),
-          Chart(),
+          BarChart1(),
         ],
       ),
     );
