@@ -15,7 +15,7 @@ class _ChartState extends State<Chart> {
       child: LineChart(showAvg ? avgData() : mainData()),
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(10.0),
       ),
     );
@@ -51,12 +51,30 @@ LineChartData mainData() {
             fontSize: 16),
         getTitles: (value) {
           switch (value.toInt()) {
+            case 0:
+              return 'J';
+            case 1:
+              return 'F';
             case 2:
-              return 'MAR';
+              return 'M';
+            case 3:
+              return 'A';
+            case 4:
+              return 'M';
             case 5:
-              return 'JUN';
+              return 'J';
+            case 6:
+              return 'J';
+            case 7:
+              return 'A';
             case 8:
-              return 'SEP';
+              return 'S';
+            case 9:
+              return 'O';
+            case 10:
+              return 'N';
+            case 11:
+              return 'D';
           }
           return '';
         },
@@ -72,11 +90,11 @@ LineChartData mainData() {
         getTitles: (value) {
           switch (value.toInt()) {
             case 1:
-              return '10k';
+              return '1M';
             case 3:
-              return '30k';
+              return '5M';
             case 5:
-              return '50k';
+              return '10M';
           }
           return '';
         },
@@ -103,10 +121,10 @@ LineChartData mainData() {
           FlSpot(11, 4),
         ],
         isCurved: true,
-        barWidth: 5,
+        barWidth: 2,
         isStrokeCapRound: true,
         dotData: FlDotData(
-          show: false,
+          show: true,
         ),
         belowBarData: BarAreaData(
           show: true,

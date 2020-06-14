@@ -15,21 +15,23 @@ class SideMenu extends StatelessWidget {
             color: Colors.blue,
           ),
         ),
-        ListTile(
-          title: Text(
-            'Home',
-            style: TextStyle(color: Colors.white),
+        ListTileTheme(
+          child: ListTile(
+            title: Text(
+              'Home',
+              style: TextStyle(color: Colors.black),
+            ),
+            onTap: () {
+              // Update the state of the app.
+              // ...
+              Navigator.pushReplacementNamed(context, "home");
+            },
           ),
-          onTap: () {
-            // Update the state of the app.
-            // ...
-            Navigator.pushReplacementNamed(context, "home");
-          },
         ),
         ListTile(
           title: Text(
             'Marketing',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),
           onTap: () {
             // Update the state of the app.
@@ -40,7 +42,7 @@ class SideMenu extends StatelessWidget {
         ListTile(
           title: Text(
             'Operation',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),
           onTap: () {
             // Update the state of the app.
